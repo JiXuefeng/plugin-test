@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh ' tools/build.sh'
+        sh '/var/lib/jenkins/workspace/plugin-test_master/tools/build.sh'
       }
     }
     stage('Test') {
